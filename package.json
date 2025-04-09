@@ -23,7 +23,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://github.com/Parthism76/portfolio",
+  "homepage": "https://parthism76.github.io/parth-portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -53,6 +53,4 @@
   "devDependencies": {
     "gh-pages": "^6.3.0"
   }
-
-  
 }

@@ -1,3 +1,5 @@
+require("dotenv").config(); 
+
 /*express is a web framework for Node.js to create a server and handle API requests */
 const express = require("express");
 const router = express.Router();
@@ -18,8 +20,8 @@ console.log(process.env.EMAIL_PASS);
 const contactEmail = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: "********@gmail.com",
-      pass: ""
+      user: "vibressence2022@gmail.com",
+      pass: "bzzc gciq bryp guvs"
     },
   });
 

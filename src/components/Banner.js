@@ -54,7 +54,11 @@ export const Banner = () => {
                         <span className="tagline"> console.log("Hello World!"); </span>
                         <h1>{` I'm `}<span className="wrap">{text}</span></h1>
                         <p>Aspiring Full-Stack Developer | Master's in Computer Science | Proficient in C#, Python, javaScript, Java | Exploring Rust | Web Dev & ML Enthusiast | Ready to Contribute and Grow in the Tech Industry</p>
-                        <button onClick = {() => console.log('connect')}>Let's connect</button>
+                        <button onClick={() => {
+                                    const contactSection = document.getElementById("contact");
+                                    if (contactSection) {
+                                    contactSection.scrollIntoView({ behavior: "smooth" });
+                                    }}}>Let's connect</button>
                         </div>
                     }
                     </TrackVisibility>

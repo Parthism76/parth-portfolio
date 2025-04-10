@@ -56,7 +56,11 @@ export const NavBar = () => {
                         <a href = "#"><img src = {navIcon3} alt = "" /></a>
                     </div>
                     <HashLink to='#connect'>
-                        <button className="vvd"><span>Let’s Connect</span></button>
+                    <button className="vvd" onClick={() => {
+                                const contactSection = document.getElementById("contact");
+                                if (contactSection) {
+                                contactSection.scrollIntoView({ behavior: "smooth" });
+                                }}}><span>Let’s Connect</span></button>
                     </HashLink>
                 </span>
                 </Navbar.Collapse>

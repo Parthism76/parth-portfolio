@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/parth-portfolio/static/css/main.db5901d5.css",
-    "main.js": "/parth-portfolio/static/js/main.0c413dc3.js",
+    "main.css": "/parth-portfolio/static/css/main.daa4a551.css",
+    "main.js": "/parth-portfolio/static/js/main.3df72b6c.js",
     "static/js/453.ace21015.chunk.js": "/parth-portfolio/static/js/453.ace21015.chunk.js",
     "static/media/color-sharp.png": "/parth-portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/parth-portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
@@ -26,12 +26,12 @@
     "index.html": "/parth-portfolio/index.html",
     "static/media/nav-icon1.svg": "/parth-portfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "/parth-portfolio/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
-    "main.db5901d5.css.map": "/parth-portfolio/static/css/main.db5901d5.css.map",
-    "main.0c413dc3.js.map": "/parth-portfolio/static/js/main.0c413dc3.js.map",
+    "main.daa4a551.css.map": "/parth-portfolio/static/css/main.daa4a551.css.map",
+    "main.3df72b6c.js.map": "/parth-portfolio/static/js/main.3df72b6c.js.map",
     "453.ace21015.chunk.js.map": "/parth-portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.db5901d5.css",
-    "static/js/main.0c413dc3.js"
+    "static/css/main.daa4a551.css",
+    "static/js/main.3df72b6c.js"
   ]
 }

@@ -11,32 +11,31 @@ import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
     const projects = [
-            {
-              title: "ShopEasy An E-Commerce website",
-              description: "Design & Development",
-              imgUrl: projImg1,
-              githubUrl : "https://github.com/Parthism76/MovieLand"
-            },
-            {
-              title: "Movieland",
-              description: "Implemented an interactive movie search application using React and the OMDB API, enabling real-time movie exploration. Designed responsive movie cards with CSS to ensure a user-friendly interface that adapts to various screen sizes.",
-              imgUrl: projImg2,
-              githubUrl:""
-            },
-            {
-              title: "Websec - A website classification system",
-              description: "Design & Development",
-              imgUrl: projImg3,
-              githubUrl:"https://github.com/Parthism76/MovieLand"
-            },
-            {
-              title: "Business Startup",
-              description: "Design & Development",
-              imgUrl: projImg1,
-              githubUrl: "https://github.com/Parthism76/MovieLand"
-            },
-           
-    ];
+        {
+          title: "ShopEasy An E-Commerce website",
+          description: "E-commerce platform with product filtering, cart, and checkout flow.",
+          imgUrl: projImg1,
+          githubUrl: "https://github.com/Parthism76/ShopEasy",
+          liveDemo: "https://shopeasy.vercel.app",
+          tech: ["React", "Node.js", "MongoDB", "Express"]
+        },
+        {
+          title: "Movieland",
+          description: "Interactive movie search with OMDB API and responsive UI.",
+          imgUrl: projImg2,
+          githubUrl: "https://github.com/Parthism76/MovieLand",
+          liveDemo: "https://movieland.vercel.app",
+          tech: ["React", "OMDB API", "CSS"]
+        },
+        {
+          title: "Websec",
+          description: "ML-based website classification system.",
+          imgUrl: projImg3,
+          githubUrl: "https://github.com/Parthism76/Websec",
+          tech: ["Python", "Scikit-learn", "Flask"]
+        },
+      ];
+      
 
     return (
         <section className="project" id = "projects">

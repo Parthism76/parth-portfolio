@@ -1,53 +1,53 @@
-import {Alert, Row, Col , } from "react-bootstrap";
-import { useEffect, useState } from "react";
+import { Row, Col } from "react-bootstrap";
+import { useState } from "react";
 
+export const Newsletter = () => {
+  const [submitted, setSubmitted] = useState(false);
 
-export const Newsletter = ({onValidated,status,message}) => {
+  const handleFormSubmit = () => {
+    setSubmitted(true);
 
-    const [email, setEmail]= useState();
+    setTimeout(() => {
+      setSubmitted(false);
+    }, 4000);
+  };
 
-    const clearFields = () => {
-        setEmail("");
-    };
+  return (
+    <Col lg={12}>
+      <div className="newsletter-bx">
+        <Row>
+          <Col lg={12} md={6} xl={5}>
+            <h3>Stay in Touch</h3>
+            <p>Drop your email and I’ll reach out when I launch something exciting!</p>
+          </Col>
+          <Col md={6} xl={7}>
+            <form
+              action="https://formsubmit.co/vibressence2022@gmail.com"
+              method="POST"
+              onSubmit={handleFormSubmit}
+              target="_blank"
+            >
+              <input type="hidden" name="_captcha" value="false" />
+              <div className="new-email-bx">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email Address"
+                  required
+                />
+                <button type="submit">Notify Me</button>
+              </div>
+            </form>
+          </Col>
+        </Row>
+
     
-    useEffect(() => {
-        if(status === 'success') {
-            clearFields();
-        }
-    }, [status])
-
-    const handleSubmit = (e) => {
-        e.preventdefault();
-        email && email.indexOf("@") > -1 &&
-        onValidated(
-            {
-                EMAIL : email
-            }
-        )
-    }
-    
-    return (
-        <Col lg = {12}>
-            <div className="newsletter-bx">
-                <Row>
-                    <Col lg ={12} md = {6} xl = {5}>
-                        <h3>Subscribe to our newsletter</h3>
-                        {status ==='sending' && <Alert>Sending...</Alert>}
-                        {status ==='error' && <Alert variant = "danger">{message}</Alert>}
-                        {status ==='success' && <Alert variant = "success">{message}</Alert>}  
-                    </Col>
-                    <Col md ={6} xl = {7}>
-                    <form onSubmit = {handleSubmit}>
-                        <div className="new-email-bx">
-                            <input value = {email} type ="email" onChange = {(e) => setEmail(e.target.value)} placeholder="Email Address"/>
-                            <button type = "submit">Submit</button>
-                            
-                        </div>                           
-                    </form>
-                    </Col>
-                </Row>
-            </div>
-        </Col>
-    )
-
-}
+        {submitted && (
+          <div className="snackbar show">
+            ✅ Thank you! You'll be notified.
+          </div>
+        )}
+      </div>
+    </Col>
+  );
+};
